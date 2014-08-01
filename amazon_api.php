@@ -20,11 +20,11 @@ class amazonApi
 
 			// initialize variables
 			$index = array('Beauty', 'Apparel', 'Music', 'Photo', 'VideoGames', 'Books', 'DVD', 'Electronics', 'Grocery', 'HealthPersonalCare', 'Kitchen', 'MP3Downloads', 'MusicTracks', 'Shoes', 'Software', 'SportingGoods', 'Toys', 'Watches');
-		    $keys = array_keys($index);
-		    shuffle($index);
-		    foreach($index as $key){
-		        $index[] = $key;
-		    }
+			$keys = array_keys($index);
+			shuffle($index);
+			foreach($index as $key){
+				$index[] = $key;
+			}
 		    array_unshift($index, 'Automotive');
 		    $index[] = 'Hobbies';
 		    $keyword = urlencode($keyword);

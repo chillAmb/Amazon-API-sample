@@ -25,9 +25,9 @@ class amazonApi
 			foreach($index as $key){
 				$index[] = $key;
 			}
-		    array_unshift($index, 'Automotive');
-		    $index[] = 'Hobbies';
-		    $keyword = urlencode($keyword);
+			array_unshift($index, 'Automotive');
+			$index[] = 'Hobbies';
+			$keyword = urlencode($keyword);
 			$sortproperty = ($_GET['sort']);
 			if ($sortproperty) {
 				$sort = $sortproperty;
